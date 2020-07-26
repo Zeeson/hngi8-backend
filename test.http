@@ -1,0 +1,10 @@
+POST http://localhost:4000/contact/ HTTP/1.1
+Content-Type: application/json
+
+{
+     "name": "Olalekan Ibrhaim Z",
+    "email":"kunmilolamylovergirl@email.com",
+    "subject": "improvement",
+    "message": "I want to write how to improve"
+
+}

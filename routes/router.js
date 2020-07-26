@@ -1,9 +1,10 @@
-const router = require('express').Router(); 
+const express = require("express")
+const router = express.Router(); 
 const Intern = require("../models/Intern")
 
 
 // index
-app.get('/', (req, res) =>{
+router.get('/', (req, res) =>{
     res.render("index"); 
 })
 
@@ -19,7 +20,7 @@ router.get("/interns", (req, res) => {
 })
 
 // post 
-app.post("/interns", (req, res) => {
+router.post("/interns", (req, res) => {
 
     const name = req.body.name
     const internId = req.body.internId
